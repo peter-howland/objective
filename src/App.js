@@ -1,13 +1,19 @@
-import './styles/App.css';
-import Resume from './components/Resume';
-import { resumeContent } from './resumeContent';
+import Resume from './components/Resume'
+import NavBar from './components/NavBar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { resumeContent } from './resumeContent'
 const App = () => {
-
- 
-
   return (
-      <Resume {...resumeContent}/>
-  );
+    <>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" exact />
+        </Routes>
+      </Router>
+      <Resume {...resumeContent} />
+    </>
+  )
 }
 
-export default App;
+export default App
