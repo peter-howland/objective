@@ -253,7 +253,7 @@ export const resumeContent = {
       name: 'Objective Home',
       link: 'https://github.com/phowland1/Objective',
       description: `You are currently looking at the deployed result of this personal project.`,
-      lastUpdated: new Date('11/5/2022'),
+      lastUpdated: new Date('7/2/2025'),
       skills: [
         Skills.javascript,
         Skills.css,
