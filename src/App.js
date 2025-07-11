@@ -1,5 +1,5 @@
 import Resume from './components/view/Resume'
-import NavBar from './components/NavBar'
+import NavBar from './components/view/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { resumeContent } from './resumeContent'
 const App = () => {
