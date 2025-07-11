@@ -1,4 +1,4 @@
-import Resume from './components/Resume'
+import Resume from './components/view/Resume'
 import NavBar from './components/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { resumeContent } from './resumeContent'

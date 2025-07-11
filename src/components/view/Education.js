@@ -45,7 +45,7 @@ const Education = ({ school }) => {
           <li key={i}>
             {degree.name} - {degree.subject}
             {degree.graduationDate &&
-              ` - Graduated: ${moment(degree.graduationDate).format(
+              ` - Completed: ${moment(degree.graduationDate).format(
                 'MMM YYYY'
               )}`}
           </li>

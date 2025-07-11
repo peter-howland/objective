@@ -35,7 +35,9 @@ export const resumeContent = {
         Skills.git,
         Skills.tdd,
         Skills.styled,
-        Skills.npm
+        Skills.npm,
+        Skills.hibernate,
+        Skills.jpa
       ]
     },
     {
@@ -244,7 +246,11 @@ export const resumeContent = {
       name: 'Regis University',
       location: 'Denver, CO',
       degrees: [
-        { name: 'Masters Certificate', subject: 'Software Engineering' }
+        {
+          name: 'Masters Certificate',
+          subject: 'Software Engineering',
+          graduationDate: new Date('6/1/2013')
+        }
       ]
     }
   ],
