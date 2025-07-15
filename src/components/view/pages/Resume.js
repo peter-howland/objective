@@ -96,7 +96,7 @@ const SectionDivider = styled.hr`
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px; // slightly larger gap to balance cards
+  grid-gap: 10px;
   margin: 10px 0;
 `
 const SectionHeader = styled.h3`

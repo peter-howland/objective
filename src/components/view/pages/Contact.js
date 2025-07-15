@@ -61,8 +61,9 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/thank-you">
+        netlify-honeypot="honey-field"
+        action="/thank-you"
+        netlify>
         <input type="hidden" name="form-name" value="contact" />
         <Hidden>
           <label>
