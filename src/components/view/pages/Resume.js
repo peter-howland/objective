@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import Skill from './Skill'
-import Experience from './Experience'
-import Education from './Education'
-import CodeExample from './CodeExample'
+import Skill from '../Skill'
+import Experience from '../Experience'
+import Education from '../Education'
+import CodeExample from '../CodeExample'
 import { motion } from 'framer-motion'
 
 const StyledResume = styled.div`
