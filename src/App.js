@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { resumeContent } from './resumeContent'
+import { resumeContent } from './data/resumeContent'
 import NavBar from './components/view/NavBar'
 import Footer from './components/view/Footer'
 import HomePage from './components/view/pages/Home'
@@ -9,6 +9,7 @@ import ContactPage from './components/view/pages/Contact'
 import ThankYouPage from './components/view/pages/ThankYou'
 import PortfolioPage from './components/view/pages/Portfolio'
 import ResumePage from './components/view/pages/Resume'
+import RecommendationsPage from './components/view/pages/Recommendations'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/recommendations" element={<RecommendationsPage />} />
           <Route path="/resume" element={<ResumePage {...resumeContent} />} />
         </Routes>
       </Content>
