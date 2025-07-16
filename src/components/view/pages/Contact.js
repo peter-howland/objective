@@ -7,7 +7,7 @@ const ContactWrapper = styled.div`
   padding: 50px 20px;
 `
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
