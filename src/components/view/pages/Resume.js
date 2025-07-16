@@ -105,17 +105,6 @@ const SectionHeader = styled.h3`
   font-size: 1.3rem;
 `
 
-const FadeInSection = ({ children }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.6, ease: 'easeOut' }}
-    style={{ marginBottom: '15px' }}>
-    {children}
-  </motion.div>
-)
-
 Date.daysBetween = (date1, date2) => {
   let one_day = 1000 * 60 * 60 * 24
   let date1_ms = date1.getTime()
@@ -249,145 +238,130 @@ const Resume = ({ summary, experience, education, codeExamples }) => {
         <h2> Software Engineer </h2>
       </Header>
       <Body>
-        <FadeInSection
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}>
-          <div>
-            <strong> Summary: </strong>
-            <p> {summary} </p>
-          </div>
-          <SectionDivider />
-          <SectionHeader>Key Competencies</SectionHeader>
-          <CategoryTitle>🧩 Languages</CategoryTitle>
-          <GridWrapper>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Primary</SubCategoryTitle>
-              {primaryLanguages &&
-                primaryLanguages.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Secondary</SubCategoryTitle>
-              {secondaryLanguages &&
-                secondaryLanguages.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Databases</SubCategoryTitle>
-              {datbases &&
-                datbases.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-          </GridWrapper>
-          <CategoryTitle>📚 Libraries & Frameworks</CategoryTitle>
-          <GridWrapper>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Javascript</SubCategoryTitle>
-              {librariesAndFrameworksJavascript &&
-                librariesAndFrameworksJavascript.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Java</SubCategoryTitle>
-              {librariesAndFrameworksJava &&
-                librariesAndFrameworksJava.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-          </GridWrapper>
-          <CategoryTitle>🛠 Software and Tools</CategoryTitle>
-          <GridWrapper>
-            <SkillCategoryCard>
-              <SubCategoryTitle> Build Tools</SubCategoryTitle>
-              {buildTools &&
-                buildTools.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Source Control</SubCategoryTitle>
-              {sourceControl &&
-                sourceControl.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>ALM Software</SubCategoryTitle>
-              {lifecycleManagement &&
-                lifecycleManagement.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>IDEs</SubCategoryTitle>
-              {devEnvironment &&
-                devEnvironment.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>CI/CD Tools</SubCategoryTitle>
-              {continuousIntegration &&
-                continuousIntegration.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Server & Deployment Tools</SubCategoryTitle>
-              {serverDeployment &&
-                serverDeployment.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Operating Systems</SubCategoryTitle>
-              {operatingSystem &&
-                operatingSystem.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-            <SkillCategoryCard>
-              <SubCategoryTitle>Other</SubCategoryTitle>
-              {other &&
-                other.map((skill) => {
-                  return <Skill skill={skill} />
-                })}
-            </SkillCategoryCard>
-          </GridWrapper>
-        </FadeInSection>
+        <div>
+          <strong> Summary: </strong>
+          <p> {summary} </p>
+        </div>
         <SectionDivider />
-        <FadeInSection
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}>
-          <SectionHeader>Professional Experience</SectionHeader>
-          {experience &&
-            experience.map((job) => {
-              return <Experience job={job} />
-            })}
-        </FadeInSection>
+        <SectionHeader>Key Competencies</SectionHeader>
+        <CategoryTitle>🧩 Languages</CategoryTitle>
+        <GridWrapper>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Primary</SubCategoryTitle>
+            {primaryLanguages &&
+              primaryLanguages.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Secondary</SubCategoryTitle>
+            {secondaryLanguages &&
+              secondaryLanguages.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Databases</SubCategoryTitle>
+            {datbases &&
+              datbases.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+        </GridWrapper>
+        <CategoryTitle>📚 Libraries & Frameworks</CategoryTitle>
+        <GridWrapper>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Javascript</SubCategoryTitle>
+            {librariesAndFrameworksJavascript &&
+              librariesAndFrameworksJavascript.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Java</SubCategoryTitle>
+            {librariesAndFrameworksJava &&
+              librariesAndFrameworksJava.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+        </GridWrapper>
+        <CategoryTitle>🛠 Software and Tools</CategoryTitle>
+        <GridWrapper>
+          <SkillCategoryCard>
+            <SubCategoryTitle> Build Tools</SubCategoryTitle>
+            {buildTools &&
+              buildTools.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Source Control</SubCategoryTitle>
+            {sourceControl &&
+              sourceControl.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>ALM Software</SubCategoryTitle>
+            {lifecycleManagement &&
+              lifecycleManagement.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>IDEs</SubCategoryTitle>
+            {devEnvironment &&
+              devEnvironment.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>CI/CD Tools</SubCategoryTitle>
+            {continuousIntegration &&
+              continuousIntegration.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Server & Deployment Tools</SubCategoryTitle>
+            {serverDeployment &&
+              serverDeployment.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Operating Systems</SubCategoryTitle>
+            {operatingSystem &&
+              operatingSystem.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+          <SkillCategoryCard>
+            <SubCategoryTitle>Other</SubCategoryTitle>
+            {other &&
+              other.map((skill) => {
+                return <Skill skill={skill} />
+              })}
+          </SkillCategoryCard>
+        </GridWrapper>
         <SectionDivider />
-        <FadeInSection
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}>
-          <SectionHeader>Education</SectionHeader>
-          {education &&
-            education.map((school) => {
-              return <Education school={school} />
-            })}
-          <SectionDivider />
-          <SectionHeader>Code Examples</SectionHeader>
-          {codeExamples &&
-            codeExamples.map((project) => {
-              return <CodeExample project={project} />
-            })}
-        </FadeInSection>
+        <SectionHeader>Professional Experience</SectionHeader>
+        {experience &&
+          experience.map((job) => {
+            return <Experience job={job} />
+          })}
+        <SectionDivider />
+        <SectionHeader>Education</SectionHeader>
+        {education &&
+          education.map((school) => {
+            return <Education school={school} />
+          })}
+        <SectionDivider />
+        <SectionHeader>Code Examples</SectionHeader>
+        {codeExamples &&
+          codeExamples.map((project) => {
+            return <CodeExample project={project} />
+          })}
       </Body>
     </StyledResume>
   )

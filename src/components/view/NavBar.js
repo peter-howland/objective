@@ -38,7 +38,7 @@ const NavBar = () => (
       <NavItem to="/">
         <FaHome size={24} />
       </NavItem>
-      <NavItem to="/portfolio">Portfolio</NavItem>
+      {/* <NavItem to="/portfolio">Portfolio</NavItem> */}
       <NavItem to="/resume">Resume</NavItem>
       <NavItem to="/recommendations">Recommendations</NavItem>
       <NavItem to="/contact">Contact</NavItem>
