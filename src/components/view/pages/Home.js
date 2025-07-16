@@ -7,24 +7,6 @@ const HomeWrapper = styled.div`
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  position: relative;
-  z-index: 1;
-
-  &:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/path-to-your-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 0.1; /* adjust for subtlety */
-    z-index: -1;
-    pointer-events: none;
-  }
 `
 
 const Hero = styled.section`

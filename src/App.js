@@ -14,9 +14,27 @@ import styled from 'styled-components'
 const AppContainer = styled.div`
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f2f5;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/resources/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+  }
 `
 
 const Content = styled.main`

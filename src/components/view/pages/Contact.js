@@ -7,7 +7,7 @@ const ContactWrapper = styled.div`
   padding: 50px 20px;
 `
 
-const ContactForm = styled.form`
+const ContactForm = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -62,8 +62,7 @@ const Contact = () => {
         method="POST"
         data-netlify="true"
         netlify-honeypot="honey-field"
-        action="/thank-you"
-        netlify>
+        action="/thank-you">
         <input type="hidden" name="form-name" value="contact" />
         <Hidden>
           <label>

@@ -8,7 +8,6 @@ import CodeExample from '../CodeExample'
 import { motion } from 'framer-motion'
 
 const StyledResume = styled.div`
-  background-color: #f0f2f5;
   min-height: 100vh;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +17,7 @@ const StyledResume = styled.div`
 const Body = styled.div`
   margin: 30px auto;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   max-width: 1000px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
