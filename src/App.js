@@ -10,6 +10,7 @@ import ThankYouPage from './components/view/pages/ThankYou'
 import PortfolioPage from './components/view/pages/Portfolio'
 import ResumePage from './components/view/pages/Resume'
 import ReferencesPage from './components/view/pages/References'
+import BackgroundShapes from './components/view/BackgroundShapes'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -28,7 +29,6 @@ const AppContainer = styled.div`
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/resources/background.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -46,6 +46,7 @@ const Content = styled.main`
 const App = () => (
   <Router>
     <AppContainer>
+      <BackgroundShapes />
       <NavBar />
       <Content>
         <Routes>
