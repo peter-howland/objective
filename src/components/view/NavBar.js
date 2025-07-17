@@ -137,6 +137,9 @@ const NavBar = () => {
         <SidebarNavItem to="/resume" onClick={() => setMenuOpen(false)}>
           Resume
         </SidebarNavItem>
+        <SidebarNavItem to="/portfolio" onClick={() => setMenuOpen(false)}>
+          Portfolio
+        </SidebarNavItem>
         <SidebarNavItem to="/references" onClick={() => setMenuOpen(false)}>
           References
         </SidebarNavItem>

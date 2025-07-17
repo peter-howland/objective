@@ -10,23 +10,41 @@ import { motion } from 'framer-motion'
 const StyledResume = styled.div`
   position: relative;
   min-height: 100vh;
+  padding: 2rem;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    padding-top: 0;
+    font-size: 0.95rem;
+  }
 `
 const DownloadButton = styled.a`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   background-color: #2a4d8d;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 6px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 
   &:hover {
-    background-color: #234170;
+    background-color: #1e386b;
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
   }
 `
 const Body = styled.div`
@@ -45,7 +63,14 @@ const Body = styled.div`
 const Header = styled.div`
   text-align: center;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
   h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -248,10 +273,10 @@ const Resume = ({ summary, experience, education, codeExamples }) => {
 
   return (
     <StyledResume>
-      <DownloadButton href="/Peter Howland - Resume 2025.pdf" download>
-        Download Resume (PDF)
-      </DownloadButton>
       <Header>
+        <DownloadButton href="/Peter Howland - Resume 2025.pdf" download>
+          Download Resume (PDF)
+        </DownloadButton>
         <h1> Peter Howland </h1>
         <h2> Software Engineer </h2>
       </Header>
