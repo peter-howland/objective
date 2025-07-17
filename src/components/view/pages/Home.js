@@ -123,32 +123,26 @@ const ContactTeaser = styled.div`
 `
 
 const Home = () => {
-  const skills = [
-    'React',
-    'Node.js',
-    'JavaScript',
-    'TypeScript',
-    'PostgreSQL',
-    'Docker'
-  ]
+  const skills = ['Java', 'Spring', 'Hibernate', 'React', 'Node.js']
 
   const featuredProjects = [
     {
       title: 'Portfolio Website',
-      description: 'Personal portfolio built with React and styled-components.',
+      description:
+        'A responsive personal site built with React and styled-components, designed to showcase my skills and projects.',
       link: '/portfolio'
     },
     {
-      title: 'Task Manager App',
+      title: 'Character Sheet',
       description:
-        'Full-stack task management app with real-time collaboration.',
-      link: '/portfolio/task-manager'
+        'A Java + Spring-powered D&D 5e utility with plans for a React frontend and live deployment.',
+      link: '/portfolio'
     },
     {
-      title: 'Blog Platform',
+      title: 'Marvel Legendary (Unity Demo)',
       description:
-        'A blogging platform featuring markdown support and comments.',
-      link: '/portfolio/blog-platform'
+        'A digital version of the Marvel Legendary card game built with Unity. Includes a gameplay video.',
+      link: '/portfolio'
     }
   ]
 
@@ -157,7 +151,8 @@ const Home = () => {
       <Hero>
         <h1>Hi, I’m Peter — a Software Engineer</h1>
         <p>
-          Building scalable full-stack web applications with React and Node.js.
+          Building scalable full-stack web applications with React, Java, and
+          Node.js.
         </p>
         <CTAButton href="/resume">View My Resume</CTAButton>
       </Hero>
@@ -165,9 +160,20 @@ const Home = () => {
       <Section>
         <SectionTitle>About Me</SectionTitle>
         <IntroText>
-          I’m passionate about crafting clean, efficient, and user-friendly
-          software solutions. With experience in modern web technologies, I
-          enjoy turning complex problems into simple, elegant applications.
+          I’m a creative and detail-oriented web developer who thrives in team
+          environments. With over a decade of experience, I’ve worked with major
+          companies like Siemens and Bank of America, specializing in Java web
+          development using Spring MVC and Hibernate. I’m passionate about
+          React, which is the framework I enjoy the most, and I’m motivated by
+          creating user-friendly, foolproof applications with thoughtful touches
+          that enhance the user experience.
+          <br />
+          My proudest achievement was leading the development of the Web
+          Inventory Management System (WIMS) at Bank of America, where I
+          collaborated closely with their compliance team to deliver a critical
+          tool ensuring regulatory adherence. Outside of work, I enjoy exploring
+          game development in my spare time and never pass up a good book —
+          especially in audiobook form during long road trips.
         </IntroText>
       </Section>
 

@@ -9,7 +9,7 @@ import ContactPage from './components/view/pages/Contact'
 import ThankYouPage from './components/view/pages/ThankYou'
 import PortfolioPage from './components/view/pages/Portfolio'
 import ResumePage from './components/view/pages/Resume'
-import RecommendationsPage from './components/view/pages/Recommendations'
+import RecommendationsPage from './components/view/pages/References'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
