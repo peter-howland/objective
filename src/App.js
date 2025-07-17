@@ -9,7 +9,7 @@ import ContactPage from './components/view/pages/Contact'
 import ThankYouPage from './components/view/pages/ThankYou'
 import PortfolioPage from './components/view/pages/Portfolio'
 import ResumePage from './components/view/pages/Resume'
-import RecommendationsPage from './components/view/pages/References'
+import ReferencesPage from './components/view/pages/References'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -54,7 +54,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/recommendations" element={<RecommendationsPage />} />
+          <Route path="/references" element={<ReferencesPage />} />
           <Route path="/resume" element={<ResumePage {...resumeContent} />} />
         </Routes>
       </Content>
