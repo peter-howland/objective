@@ -59,6 +59,9 @@ const Body = styled.div`
     margin-top: 5px;
     margin-bottom: 15px;
   }
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
 `
 const Header = styled.div`
   text-align: center;
