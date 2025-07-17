@@ -8,16 +8,16 @@ import CodeExample from '../CodeExample'
 import { motion } from 'framer-motion'
 
 const StyledResume = styled.div`
+  padding: 2rem;
   position: relative;
   min-height: 100vh;
-  padding: 2rem 0 2rem 2rem;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 0.5rem;
+    padding: 2rem 0 2rem 2rem;
     padding-top: 0;
     font-size: 0.95rem;
   }
@@ -63,7 +63,6 @@ const Body = styled.div`
 const Header = styled.div`
   text-align: center;
   margin-bottom: 40px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -281,10 +280,10 @@ const Resume = ({ summary, experience, education, codeExamples }) => {
 
   return (
     <StyledResume>
+      <DownloadButton href="/Peter Howland - Resume 2025.pdf" download>
+        Download Resume (PDF)
+      </DownloadButton>
       <Header>
-        <DownloadButton href="/Peter Howland - Resume 2025.pdf" download>
-          Download Resume (PDF)
-        </DownloadButton>
         <h1> Peter Howland </h1>
         <h2> Software Engineer </h2>
       </Header>
