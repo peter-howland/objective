@@ -17,7 +17,7 @@ const StyledResume = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 0.3rem 2rem 1.5rem;
     padding-top: 0;
     font-size: 0.95rem;
   }
@@ -39,11 +39,12 @@ const DownloadButton = styled.a`
 
   @media (max-width: 768px) {
     position: relative;
+    display: block;
+    margin: 1rem auto;
     top: 0;
     right: 0;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
+    width: fit-content;
+    border-radius: 5px;
     text-align: center;
   }
 `
