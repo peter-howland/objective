@@ -17,7 +17,7 @@ const recommendations = [
     name: 'Nathan Foster',
     title: 'Software Engineer',
     photo: '/resources/NF.jpg',
-    text: 'Peter was a great colleague to when joining Passport. He is kind and willing to collaborate and ask great questions. His humility makes him teachable and he has a desire to learn and improve. He delivered quality code and always contributed to our daily stand up and sprint planning meetings. I recommend Peter to any team looking for a solid developer that delivers.',
+    text: 'Peter was a great colleague to (have) when joining Passport. He is kind and willing to collaborate and ask great questions. His humility makes him teachable and he has a desire to learn and improve. He delivered quality code and always contributed to our daily stand up and sprint planning meetings. I recommend Peter to any team looking for a solid developer that delivers.',
     linkedInUrl: 'https://www.linkedin.com/in/nathanhfoster/'
   }
 ]
