@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 const StyledResume = styled.div`
   position: relative;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;

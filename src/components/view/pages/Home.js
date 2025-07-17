@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const HomeWrapper = styled.div`
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 2rem 0 2rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 `

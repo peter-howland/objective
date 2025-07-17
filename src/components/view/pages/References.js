@@ -6,10 +6,10 @@ import references from '../../../data/references.js'
 const ReferencesWrapper = styled.div`
   max-width: 800px;
   margin: 40px auto;
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
 
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 0.4rem;
   }
 `
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Section = styled.section`
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   max-width: 900px;
   margin: 0 auto;
 `
@@ -34,6 +34,9 @@ const Description = styled.p`
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `
 
 const VideoWrapper = styled.div`
