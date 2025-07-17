@@ -13,6 +13,14 @@ const StyledSkill = styled.div`
   transition: background 0.3s ease;
   }
 `
+const SkillItem = styled.li`
+  background-color: #dbeafe; /* light blue background */
+  color: #1e40af; /* dark blue text */
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+`
 
 const Skill = ({ skill }) => (
   <StyledSkill key={skill.id}>

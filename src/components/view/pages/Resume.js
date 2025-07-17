@@ -91,6 +91,14 @@ const SkillCategoryCard = styled.div`
   margin-bottom: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 `
+const SkillsList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+`
+
 const CategoryTitle = styled.div`
   font-size: 1rem;
   font-weight: bold;
@@ -134,8 +142,8 @@ const SectionDivider = styled.hr`
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 12px;
   margin: 10px 0;
 `
 const SectionHeader = styled.h3`
@@ -291,41 +299,51 @@ const Resume = ({ summary, experience, education, codeExamples }) => {
         <GridWrapper>
           <SkillCategoryCard>
             <SubCategoryTitle>Primary</SubCategoryTitle>
-            {primaryLanguages &&
-              primaryLanguages.map((skill) => {
-                return <Skill skill={skill} />
-              })}
+            <SkillsList>
+              {primaryLanguages &&
+                primaryLanguages.map((skill) => {
+                  return <Skill skill={skill} />
+                })}
+            </SkillsList>
           </SkillCategoryCard>
           <SkillCategoryCard>
             <SubCategoryTitle>Secondary</SubCategoryTitle>
-            {secondaryLanguages &&
-              secondaryLanguages.map((skill) => {
-                return <Skill skill={skill} />
-              })}
+            <SkillsList>
+              {secondaryLanguages &&
+                secondaryLanguages.map((skill) => {
+                  return <Skill skill={skill} />
+                })}
+            </SkillsList>
           </SkillCategoryCard>
           <SkillCategoryCard>
             <SubCategoryTitle>Databases</SubCategoryTitle>
-            {datbases &&
-              datbases.map((skill) => {
-                return <Skill skill={skill} />
-              })}
+            <SkillsList>
+              {datbases &&
+                datbases.map((skill) => {
+                  return <Skill skill={skill} />
+                })}
+            </SkillsList>
           </SkillCategoryCard>
         </GridWrapper>
         <CategoryTitle>📚 Libraries & Frameworks</CategoryTitle>
         <GridWrapper>
           <SkillCategoryCard>
             <SubCategoryTitle>Javascript</SubCategoryTitle>
-            {librariesAndFrameworksJavascript &&
-              librariesAndFrameworksJavascript.map((skill) => {
-                return <Skill skill={skill} />
-              })}
+            <SkillsList>
+              {librariesAndFrameworksJavascript &&
+                librariesAndFrameworksJavascript.map((skill) => {
+                  return <Skill skill={skill} />
+                })}
+            </SkillsList>
           </SkillCategoryCard>
           <SkillCategoryCard>
             <SubCategoryTitle>Java</SubCategoryTitle>
-            {librariesAndFrameworksJava &&
-              librariesAndFrameworksJava.map((skill) => {
-                return <Skill skill={skill} />
-              })}
+            <SkillsList>
+              {librariesAndFrameworksJava &&
+                librariesAndFrameworksJava.map((skill) => {
+                  return <Skill skill={skill} />
+                })}
+            </SkillsList>
           </SkillCategoryCard>
         </GridWrapper>
         <CategoryTitle>🛠 Software and Tools</CategoryTitle>

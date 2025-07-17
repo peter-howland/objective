@@ -1,34 +1,53 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ContactWrapper = styled.div`
+const ContactWrapper = styled.section`
   display: flex;
-  justify-content: center;
-  padding: 50px 20px;
+  flex-direction: column;
+  font-size: 1rem;
+  align-items: center;
+  padding: 2rem 1rem; /* top/bottom: 2rem, left/right: 1rem */
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 `
 
 const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 15px;
   width: 100%;
-  max-width: 800px;
-  background: #f9fafc;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  gap: 1rem;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
 `
 
 const Input = styled.input`
   padding: 12px 15px;
-  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
 `
 
 const TextArea = styled.textarea`
   padding: 12px 15px;
-  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   resize: vertical;
@@ -41,7 +60,6 @@ const Hidden = styled.p`
 
 const Button = styled.button`
   padding: 12px 20px;
-  font-size: 1rem;
   background-color: #2a4d8d;
   color: white;
   border: none;
@@ -53,10 +71,21 @@ const Button = styled.button`
     background-color: #1f3a66;
   }
 `
+const IntroMessage = styled.p`
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+`
 
 const Contact = () => {
   return (
     <ContactWrapper>
+      <IntroMessage>
+        Want to work together? <br /> I'm open to full-time, contract, and
+        freelance development work. <br /> <br /> Whether you’re looking for
+        someone to build a polished React frontend, connect your API layer, or
+        bring a product idea to life, let’s talk!
+      </IntroMessage>
       <ContactForm
         name="contact"
         method="POST"
