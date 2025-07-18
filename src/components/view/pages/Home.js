@@ -154,7 +154,6 @@ const Home = () => {
           Building scalable full-stack web applications with React, Java, and
           Node.js.
         </p>
-        <CTAButton href="/resume">View My Resume</CTAButton>
       </Hero>
 
       <Section>
