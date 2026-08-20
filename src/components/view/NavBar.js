@@ -117,6 +117,8 @@ const NavBar = () => {
           <NavItem to="/portfolio">Portfolio</NavItem>
           <NavItem to="/references">References</NavItem>
           <NavItem to="/contact">Contact</NavItem>
+          <NavItem to="/spell-list">Spell List</NavItem>
+          <NavItem to="/character-sheet">Character Sheet</NavItem>
         </div>
         <Socials />
       </Nav>

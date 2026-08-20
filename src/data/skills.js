@@ -46,6 +46,7 @@ export const Skills = {
   maven: { id: 29, name: 'Maven', type: 'build_tool' },
   gradle: { id: 30, name: 'Maven', type: 'build_tool' },
   npm: { id: 54, name: 'Node Package Manager', type: 'build_tool' },
+  auth0: { id: 55, name: 'Auth0', type: 'other' },
 
   git: { id: 31, name: 'Git', type: 'source_control' },
   subversion: { id: 32, name: 'Subversion', type: 'source_control' },

@@ -198,7 +198,8 @@ export const resumeContent = {
         'Use the hybris eCommerce platform and Spring MVC, among many other technologies',
         'Use hybris to create dynamic web pages including marketing and advertising content',
         'Extend hybris source code to customize the platform to fit our needs',
-        'Use the native database import/export (impex) functionality to update the database'
+        'Use the native database import/export (impex) functionality to update the database',
+        'Worked with application authentication using single sign-on (SSO) and Auth0-based identity services'
       ],
       skills: [
         Skills.java,
@@ -222,7 +223,8 @@ export const resumeContent = {
         Skills.hybris,
         Skills.jenkins,
         Skills.ant,
-        Skills.tomcat
+        Skills.tomcat,
+        Skills.auth0
       ]
     }
   ],

@@ -12,6 +12,9 @@ import ResumePage from './components/view/pages/Resume'
 import ReferencesPage from './components/view/pages/References'
 import BackgroundShapes from './components/view/BackgroundShapes'
 import styled from 'styled-components'
+import SpellList from './components/view/pages/SpellList'
+import CharacterList from './components/CharacterSheet/pages/CharacterList'
+import NewCharacterForm from './components/CharacterSheet/pages/NewCharacterForm'
 
 const AppContainer = styled.div`
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -60,6 +63,12 @@ const App = () => (
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/references" element={<ReferencesPage />} />
           <Route path="/resume" element={<ResumePage {...resumeContent} />} />
+          <Route path="/spell-list" element={<SpellList />} />
+          <Route path="/character-sheet" element={<CharacterList />} />
+          <Route
+            path="/character-sheet/character/create"
+            element={<NewCharacterForm />}
+          />
         </Routes>
       </Content>
       <Footer />
